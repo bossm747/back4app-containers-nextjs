@@ -7,7 +7,7 @@ import Task from "../components/Task";
 import * as React from "react";
 import {useEffect, useState} from "react";
 import Link from "next/link";
-import useGlobalStore from "../store/store";
+import useGlobalStore from "@/store/storage";
 
 export default function Home() {
 
@@ -57,5 +57,5 @@ export default function Home() {
         </Grid>
       )}
     </Container>
-  )
+  );
 }

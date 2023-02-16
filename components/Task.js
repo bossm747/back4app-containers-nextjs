@@ -30,5 +30,5 @@ export default function Task(props) {
         <Button size="small" onClick={() => props.deleteTask(props.id)}>Delete</Button>
       </CardActions>
     </Card>
-  )
+  );
 }

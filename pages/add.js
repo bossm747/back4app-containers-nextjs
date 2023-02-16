@@ -6,8 +6,8 @@ import Button from "@mui/material/Button";
 import CardContent from "@mui/material/CardContent";
 import Card from "@mui/material/Card";
 import Link from "next/link";
-import useGlobalStore from "../store/store";
 import {useRouter} from "next/router";
+import useGlobalStore from "@/store/storage";
 
 export default function Add() {
 
@@ -25,7 +25,7 @@ export default function Add() {
       isDone: isDone,
     });
     router.push("/");
-  }
+  };
 
   return (
     <Container maxWidth="lg">
@@ -74,5 +74,5 @@ export default function Add() {
         </CardContent>
       </Card>
     </Container>
-  )
+  );
 }

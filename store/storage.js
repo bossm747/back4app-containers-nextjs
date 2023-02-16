@@ -38,7 +38,7 @@ const useGlobalStore = create(
       clearTasks: () => {
         set(() => ({
           tasks: [],
-        }))
+        }));
       }
     }),
     {name: "global"}
