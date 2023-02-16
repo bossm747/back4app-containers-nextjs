@@ -31,7 +31,7 @@ export default function Add() {
     <Container maxWidth="lg">
       <Box sx={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
         <Typography variant="h4" component="h1" sx={{my: 2}}>
-          simple-todo
+          <a href="https://github.com/duplxey/back4app-containers-nextjs">nextjs-todo</a>
         </Typography>
         <Link href="/" passHref><Button variant="text" sx={{maxHeight: 32}}>View tasks</Button></Link>
       </Box>
