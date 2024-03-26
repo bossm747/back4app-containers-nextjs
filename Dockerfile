@@ -33,3 +33,20 @@ ENV PORT 3000
 
 # serve the app
 CMD ["node", "./standalone/server.js"]
+# Use an official Python runtime as a parent image
+FROM python:3.8-slim
+
+# Set the working directory in the container
+WORKDIR /usr/src/app
+
+# Copy the local directory contents into the container
+COPY . .
+
+# Install any needed packages specified in requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Define environment variable for CrewAI
+ENV MISTRAL_AI_API_KEY=YuEN5O9MuldvedUHCgyKnqMJUEiZI0PB
+
+# Command to run the app
+CMD ["python", "./src/main.py"]
